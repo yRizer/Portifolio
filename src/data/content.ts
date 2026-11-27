@@ -87,7 +87,7 @@ export const projects: Project[] = [
     kicker: 'Full stack · 2025',
     title: 'Cadastro e Login de Usuários',
     text: 'Teste técnico para vaga de back-end: autenticação, edição de perfil e upload de foto com limpeza dos arquivos antigos. Responsivo do desktop ao celular.',
-    tech: 'PHP · React · CSS',
+    tech: 'PHP · MySQL · JavaScript',
     link: { label: 'Código', href: 'https://github.com/yRizer/Sistema-Basico-de-Usuarios' },
     half: true,
   },
