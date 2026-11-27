@@ -102,7 +102,6 @@ export const pinhalTour = {
     { src: img('pinhaltour/mapa.webp'), caption: 'Mapa com os pontos por categoria' },
     { src: img('pinhaltour/rota.webp'), caption: 'Rota traçada até o local' },
   ],
-  dashboard: img('pinhaltour/dashboard.webp'),
 }
 
 export const timeline = [
