@@ -211,13 +211,9 @@ footer .wrap{padding-block:2rem;display:flex;justify-content:space-between;flex-
 .dots{display:flex;gap:.45rem;justify-content:center;margin-top:1.4rem}
 .dots button{width:8px;height:8px;border-radius:50%;border:0;padding:0;background:var(--dim);cursor:pointer;transition:background .3s, transform .3s}
 .dots button[aria-current="true"]{background:var(--ink);transform:scale(1.3)}
-.screen-caption{text-align:center;margin-top:.7rem;font-family:var(--f-mono);font-size:.72rem;color:var(--muted);min-height:1.2em}
+/* largura 0 + min-width 100%: a legenda não alarga a coluna; altura fixa de 2 linhas: não empurra o celular */
+.screen-caption{text-align:center;margin-top:.7rem;font-family:var(--f-mono);font-size:.72rem;line-height:1.4;color:var(--muted);width:0;min-width:100%;height:2.8em;overflow:hidden}
 
-/* painel web do PinhalTour */
-.dash{margin-top:4rem}
-.dash .browser{transform:none}
-.dash .note{margin-top:1rem;color:var(--muted);font-size:.9rem;max-width:60ch}
 
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--dim)}
 .btn[aria-disabled="true"]{opacity:.5;cursor:default}
-.dash{max-width:880px;margin-inline:auto}

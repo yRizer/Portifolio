@@ -7,10 +7,11 @@ export function LineDetectorDemo() {
   return (
     <div className="demo">
       <div className="compare fx" style={{ ['--pos' as string]: `${pos}%` }}>
-        <img src={detector.document} alt="Página dupla de um processo manuscrito do século XIX" loading="lazy" />
-        <img className="after" src={detector.detection} alt="A mesma página com cada linha manuscrita destacada em azul pelo detector" loading="lazy" />
-        <span className="tag l">detecção</span>
-        <span className="tag r">original</span>
+        {/* Original à esquerda da barra, detecção à direita */}
+        <img src={detector.detection} alt="A mesma página com cada linha manuscrita destacada em azul pelo detector" loading="lazy" />
+        <img className="after" src={detector.document} alt="Página dupla de um processo manuscrito do século XIX" loading="lazy" />
+        <span className="tag l">original</span>
+        <span className="tag r">detecção</span>
         <span className="handle" aria-hidden="true" />
         <input type="range" min={0} max={100} value={pos} onChange={(e) => setPos(Number(e.target.value))}
           aria-label="Comparar o documento original com as linhas detectadas" />

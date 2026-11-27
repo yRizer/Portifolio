@@ -25,10 +25,10 @@ export function PhoneShowcase() {
             <h3>PinhalTour</h3>
             <p className="desc">
               Plataforma de turismo inteligente de Espírito Santo do Pinhal, feita em trio. O app traça rotas como a do
-              Café e do Vinho com Mapbox e lê QR codes dos totens. Um painel web cadastra pontos e mostra métricas de visitação.
+              Café e do Vinho com Mapbox, mostra eventos e pontos turísticos e lê QR codes dos totens.
             </p>
             <span className="label" style={{ textTransform: 'none', letterSpacing: 0 }}>
-              React Native · Expo · Mapbox · Node.js · painel em React
+              React Native · Expo · Mapbox · TypeScript
             </span>
             <div className="links"><a href={pinhalTour.repo} target="_blank" rel="noopener">Código ↗</a></div>
           </div>
@@ -50,14 +50,6 @@ export function PhoneShowcase() {
             </div>
             <p className="screen-caption" aria-live="polite">{screens[index].caption}</p>
           </div>
-        </div>
-        <div className="dash fx">
-          <div className="browser">
-            <div className="bar"><i /><i /><i /><span className="url">Painel administrativo · PinhalTour</span></div>
-            <img className="shot" src={pinhalTour.dashboard} width={1400} height={1031} loading="lazy"
-              alt="Painel administrativo com visitas mensais, QR codes escaneados, gráfico de visitas e locais mais populares" />
-          </div>
-          <p className="note">O painel web acompanha visitas, leituras de QR code e os locais mais populares, e permite cadastrar novos pontos turísticos.</p>
         </div>
       </div>
     </section>
